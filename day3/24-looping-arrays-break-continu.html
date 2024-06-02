@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+          const taha =[
+        'Taha',
+        'Goulzima',
+        '2024 - 2001',
+        'programmer',
+        ['amin','hassan','kamal'],
+        true
+        
+        ];
+        
+        
+        for(let i = 0 ; i < taha.length ; i++) {
+            console.log(taha[i])
+        }
+        
+
+        const years = [2001,2000,2005,1945,2009,1955,1977,1633];
+        const ages = [];
+
+        for(let i = 0 ; i < years.length ; i++) {
+            ages.push(2025 - years[i] + ' years old');
+        }
+
+        console.log(ages  );
+
+        //continue and break 
+        const Taha =[
+        'Taha',
+        'Goulzima',
+        '2024 - 2001',
+        'programmer',
+        ['amin','hassan','kamal'],
+        true
+        
+        ];
+        console.log('====== only string ==========')
+        for (let i = 0 ; i < Taha.lenght ; i++){
+            if(typeof Taha[i] !== 'string') continue ;
+
+            console.log(Taha[i], typeof Taha[i] );
+        }
+    </script>
+</body>
+</html>

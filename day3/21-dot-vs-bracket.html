@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const taha ={
+            firstName : 'Taha',
+            lastName : 'Goulzima',
+            age : 2024-2001,
+            job :'Programmer',
+            friends :['amin','hassan','kamal']
+        };
+        
+        console.log(taha);
+        console.log(taha.firstName);
+        console.log(taha.lastName);
+        console.log(taha.age);
+        console.log(taha.job);
+        console.log(taha.friends);
+
+
+        console.log(taha['firstName']);
+        console.log(taha['lastName']);
+        console.log(taha['age']);
+        console.log(taha['job']);
+        console.log(taha['friends']);
+
+
+        const nameKey = 'Name';
+        console.log(taha['first' + nameKey]);
+        console.log(taha['last' + nameKey]);
+
+
+
+        //example
+        const intrestedIn = prompt('what do you wanna know about me ? choose between firstName anad lastName , age , job, friends');
+        console.log(taha[intrestedIn]);
+
+
+    </script>
+</body>
+</html>

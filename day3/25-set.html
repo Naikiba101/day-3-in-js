@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myData = [1, 1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 7, 8, 8];
+      let myUniqueData = new Set([1, 1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 7, 8, 8]);
+
+      console.log(myData);
+      console.log(myUniqueData);
+
+      let mySet = new Set([1, 2, 3, 4, 5]);
+      console.log(mySet);
+
+      mySet.add(6);
+      console.log(mySet);
+
+      mySet.has(3); // return true
+      console.log(mySet);
+
+      mySet.delete(3);
+      console.log(mySet);
+
+      for (let item of mySet) {
+        console.log(item);
+      }
+
+      let myArray = [...mySet];
+      // or
+      let myarray = Array.from(mySet);
+    </script>
+  </body>
+</html>
